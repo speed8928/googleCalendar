@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Google calender</title>
+<script>
+
+</script>
+<style> 
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+.center {
+    text-align: center;
+}
+</style>
+</head>
+<body>
+    <h1>Web - Full-stack assignment(Smile Liu)</h1>
+    <button id="get-button">Retrieve Data</button>
+    <button id="sync" onclick="location.href='http://localhost:3000/sync';">Synchronize  Data with google calendar</button><br><br>
+    
+    <form id="create-form" class = "center">Event name: 
+
+        <input type="text" id="create-input" class = "center"><br><br>Description:<input type= "text" id="description-content" class = "center"><br><br>Location:<input type="text" id="location"><br><br>Start:<input type = "datetime-local" id="startTime" class = "center"><br><br>End:<input type = "datetime-local" id="endTime" class = "center"><br><br><input type= "button" class = "center" value = "Create new event" id= "create-new"></button><br>
+    </form>
+    
+  
+
+    <table>
+        <thead>
+            <tr>    
+                <th>Time</th>
+                <th>Events</th>
+                <th>Action</th>
+                <th></th>
+                <th>Id</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+
+
+    <script src="jquery.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
